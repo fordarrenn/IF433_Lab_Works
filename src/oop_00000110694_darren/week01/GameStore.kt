@@ -13,4 +13,12 @@ fun printReceipt(title: String, finalPrice: Int){
 fun main(){
     val gameTitle = "Heartopia"
     val price = 900000
+    val userNote: String? = null
+
+    val lengthNote = userNote?.length ?: 0
+
+    printReceipt(gameTitle, price)
+    if (lengthNote == 0){
+        println("Tidak ada catatan")
+    }
 }
