@@ -5,5 +5,11 @@ fun main(){
     val weapon = Weapon("Three Principles of the People")
 
     println("===TEST ERROR===")
-    println("XP: ${player.xp}")
+    // println("XP: ${player.xp}")
+
+    player.addXp(50)
+    player.addXp(60)
+
+    weapon.damage = 100
+    println(weapon.tier)
 }
