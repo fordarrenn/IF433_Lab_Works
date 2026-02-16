@@ -10,5 +10,6 @@ fun main(){
 
     e.increasePerformance()
 
+    // print
     println("Pajak: ${e.tax}")
 }
