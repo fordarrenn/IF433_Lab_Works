@@ -8,11 +8,11 @@ fun main(){
     println("\nEMPLOYEE TYPE: Manager")
     val manager = Manager(e1, 15000000)
     manager.work()
-    manager.calculateBonus()
+    println("Bonus: ${manager.calculateBonus()}")
 
     println("\n=== EMPLOYEE INFO ===")
     println("\nEMPLOYEE TYPE: Developer")
     val developer = Developer(e2, 7000000, "Assembler")
     developer.work()
-    developer.calculateBonus()
+    println("Bonus: ${developer.calculateBonus()}")
 }
