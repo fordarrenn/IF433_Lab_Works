@@ -7,5 +7,9 @@ fun main(){
     val accounts: List<PaymentMethod> = listOf(vlad, dmitry)
     for(acc in accounts){
         acc.processPayment(75000.0)
+
+        when(acc){
+            is EWallet -> acc.topUp(50000.0)
+        }
     }
 }
