@@ -5,6 +5,7 @@ class SmartSpeaker(override val id: String, override val name: String, val song:
         println("Speaker $name ($id) - dinyalakan")
     }
 
+    // musik
     fun playMusic(){
         println("Speaker $name ($id) memutar lagu $song")
     }
