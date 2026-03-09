@@ -1,6 +1,6 @@
 package oop_00000110694_darren.week06
 
-class SmartHome {
+class SmartHomeHub {
     val devices = mutableListOf<SmartDevice>()
 
     fun addDevice(device: SmartDevice) {}
