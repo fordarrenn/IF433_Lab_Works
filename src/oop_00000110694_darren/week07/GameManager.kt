@@ -5,5 +5,6 @@ object GameManager{
 
     fun startGame(){
         isGameRunning = true
+        println("Game started!")
     }
 }
