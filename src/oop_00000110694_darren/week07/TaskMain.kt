@@ -20,4 +20,13 @@ fun main(){
 
     val(userName, userAge) = data1
     println("Destruct: $userName berumur $userAge")
+
+    // TASK 2
+    println("\n TEST SEALED CLASS\n")
+    val response: ApiResponse = ApiResponse.Success("Data berhasil ditarik!")
+
+    val uiMessage = when(response){
+        is ApiResponse.Success -> "Tampilkan: ${response.data}"
+        is ApiResponse.Error -> "Alert: ${response.message}"
+    }
 }
