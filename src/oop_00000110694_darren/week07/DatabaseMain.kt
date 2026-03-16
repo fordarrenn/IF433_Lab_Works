@@ -1,5 +1,9 @@
 package oop_00000110694_darren.week07
 
 fun main(){
-    val client = NetworkClient("http://ayam.goreng")
+    println("Database Manager Status: ${DatabaseManager.connectionStatus}")
+    DatabaseManager.connect()
+
+    val client = NetworkClient.createClient()
+    client.connect()
 }
