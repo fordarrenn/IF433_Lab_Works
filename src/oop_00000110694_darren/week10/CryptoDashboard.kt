@@ -12,5 +12,7 @@ fun main(){
         println("Coin: ${it.name}, Balance: ${it.balance}")
     }
 
-
+    val txRepo = WalletRepository<Transaction>()
+    txRepo.add(Transaction("TX-BTC", 500.0))
+    txRepo.add(Transaction("TX-ETH", 700.0))
 }
