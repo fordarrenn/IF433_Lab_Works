@@ -15,4 +15,7 @@ fun main(){
     val txRepo = WalletRepository<Transaction>()
     txRepo.add(Transaction("TX-BTC", 500.0))
     txRepo.add(Transaction("TX-ETH", 700.0))
+    txRepo.getAll().forEach {
+        println("Trans: ${it.id} - ${it.amount}")
+    }
 }
