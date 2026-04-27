@@ -7,4 +7,10 @@ fun main(){
     coinRepo.add(Coin("USDT", 5.5))
 
     val response = ApiResponse("200 OK", coinRepo.getAll())
+
+    response.data.forEach{
+        println("Coin: ${it.name}, Balance: ${it.balance}")
+    }
+
+
 }
