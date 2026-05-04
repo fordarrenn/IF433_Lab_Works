@@ -24,4 +24,11 @@ fun main(){
         SmartDevice("Picolo", "Pet Care", true, 10)
     }
     homeDevices.add(feeder)
+
+    val result = homeDevices.find{
+        it.category == "Camera"
+    }
+    result?.let {
+        println(it.diagnose())
+    }
 }
