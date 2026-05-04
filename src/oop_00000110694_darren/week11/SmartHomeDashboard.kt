@@ -31,4 +31,8 @@ fun main(){
     result?.let {
         println(it.diagnose())
     }
+
+    with(homeDevices){
+        println("Jumlah perangkat: ${this.size}")
+    }
 }
